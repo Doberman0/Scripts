@@ -13,7 +13,6 @@ The idea is then to go through module_info and workout the mean
 for each module. Then, we rank the results.
 '''
 module_info = {}
-file = 'SampleResults.csv'
 
 def workOutAverages():
     module_averages = []
@@ -49,5 +48,6 @@ def extractValuesFromFile():
 
 
 if __name__ == '__main__':
+    file = input('Please enter the name of the file you wish to analyze: ')
     extractValuesFromFile()
     outputOrder(workOutAverages())
