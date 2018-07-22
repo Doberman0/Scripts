@@ -27,8 +27,8 @@ def outputOrder(module_averages):
         print('The module %s has an average score of %i' % pair)
 
 def extractValuesFromFile():
-    with open(file, newline = '') as results:
-        file_reader = csv.reader(results)
+    with open(results_file, newline = '') as results:
+        file_reader = csv.reader(results_file)
         while True:
             #Extracting module codes and marks
             try:
@@ -48,6 +48,6 @@ def extractValuesFromFile():
 
 
 if __name__ == '__main__':
-    file = input('Please enter the name of the file you wish to analyze: ')
+    results_file = input('Please enter the name of the file you wish to analyze: ')
     extractValuesFromFile()
     outputOrder(workOutAverages())
