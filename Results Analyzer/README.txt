@@ -8,3 +8,6 @@ To get this to run:
 
 N.B.The script works on csv files (the exact structure/layout of which you can inferbased on the sample csv file I've provided)
 N.B. This script simply computes the mean of the module => results may be skewed.
+
+TODO:
+- Add an automated scraper (i.e. you should be able to give an arbitary CSV file and reorder it to make it compatible with the scraper)
