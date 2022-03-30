@@ -19,6 +19,5 @@ function CheckSales() {
 
     //Send the message off
     MailApp.sendEmail(row[email], subject, message);
-    //Logger.log(message);
   }); 
 }
